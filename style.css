@@ -1,0 +1,196 @@
+body {
+  background-color: #000;
+  color: #ff1b1b;
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 80px 10px 10px; 
+}
+
+html {
+  scroll-padding-top: 100px; /* adjust based on navbar height */
+}
+
+
+/* Details Section */
+.details {
+  margin: 10px 0;
+  padding: 15px;
+  border: 2px solid #ff1b1b;
+  background-color: rgba(255, 0, 0, 0.05);
+  text-align: left;
+}
+
+.details p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Life Motto */
+.motto {
+  margin: 30px 0;
+  font-size: 1.3em;
+  font-style: italic;
+  border-top: 2px solid #ff1b1b;
+  border-bottom: 2px solid #ff1b1b;
+  padding: 10px;
+}
+
+/* College Schedule Table */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  color: #ff1b1b;
+  font-size: 1em;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ff1b1b;
+}
+
+th {
+  background-color: #1a0000;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 0, 0, 0.05);
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.image-gallery img {
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 3px solid #ff1b1b;
+}
+
+/* Section Padding */
+.section-padding {
+  padding-top: 30px;
+}
+
+/* Section Headings */
+.section-heading {
+  margin-bottom: 20px;
+}
+
+/* Contact Card */
+.contact-card {
+  margin: 0 auto 30px auto;
+  max-width: 400px;
+  background: rgba(255, 27, 27, 0.07);
+  border: 2px solid #ff1b1b;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h3 {
+  margin-top: 0;
+}
+
+.contact-link {
+  color: #ff1b1b;
+  text-decoration: none;
+}
+
+/* Project Card */
+.project-card {
+  margin: 0 auto 30px auto;
+  max-width: 1000px;
+  background: rgba(255, 27, 27, 0.07);
+  border: 2px solid #ff1b1b;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  border: 2px solid #ff1b1b;
+  margin-bottom: 15px;
+}
+
+.project-info {
+  width: 100%;
+  text-align: left;
+}
+
+.project-info h4 {
+  margin: 0 0 10px 0;
+}
+
+.project-info p {
+  margin: 0 0 8px 0;
+}
+
+.audio-player {
+  margin-top: 40px;
+}
+
+.link {
+  color: #ff1b1b;
+  text-decoration: underline;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  z-index: 1000;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #ff1b1b;
+  text-decoration: none;
+}
