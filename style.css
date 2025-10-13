@@ -6,9 +6,13 @@ body {
   padding: 0;
   text-align: center;
   background-image: url("img/background.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 h1,
@@ -21,13 +25,13 @@ h3 {
 .container {
   max-width: 800px;
   margin: auto;
-  padding: 80px 10px 10px; 
+  padding: 80px 10px 10px;
 }
 
 html {
+  scroll-behavior: smooth;
   scroll-padding-top: 100px; /* adjust based on navbar height */
 }
-
 
 /* Details Section */
 .details {
@@ -167,7 +171,6 @@ tr:nth-child(even) {
   text-decoration: underline;
 }
 
-
 nav {
   position: fixed;
   top: 0;
@@ -193,4 +196,42 @@ nav li {
 nav a {
   color: #ff1b1b;
   text-decoration: none;
+}
+
+.code-box {
+  background-color: #0d0d0d; /* dark background */
+  border: 2px solid #ff1b1b; /* red border like your theme */
+  border-radius: 8px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+  overflow-x: auto; /* allows horizontal scroll if code is long */
+  box-shadow: 0 0 10px rgba(255, 27, 27, 0.2);
+}
+
+.code-box pre {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  font-size: 0.95em;
+  color: #e6e6e6;
+}
+
+.code-box code {
+  white-space: pre-wrap;
+  display: block;
+}
+
+.mengenal-container {
+  max-width: 900px;
+  margin: 50px auto 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+  font-size: 1.1em;
+}
+
+.mengenal-container h1 {
+  text-align: center;
 }

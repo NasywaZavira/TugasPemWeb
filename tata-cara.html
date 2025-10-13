@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Create a Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div class="mengenal-container">
+      <h1>How to Create a Simple Website</h1>
+      <h3>Step-by-Step Guide to Building Your First Web Page</h3>
+      <p>
+        Creating a website might sound complex at first, but it’s actually a
+        structured and creative process. With just a few essential files —
+        <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> — you can build your own
+        interactive web experience from scratch.
+      </p>
+
+      <h3>1. Set Up Your Workspace</h3>
+      <p>
+        Start by creating a new folder for your project. Inside it, make three
+        files:
+        <b>index.html</b>, <b>style.css</b>, and <b>script.js</b>. You can use
+        any code editor you like, such as Visual Studio Code, Sublime Text, or
+        even Notepad.
+      </p>
+
+      <h3>2. Build the Structure (HTML)</h3>
+      <p>
+        HTML provides the foundation of your site — it defines what appears on
+        the page. You’ll add elements like headings, text, links, and images
+        using HTML tags. Here’s an example of a very basic structure:
+      </p>
+
+      <div class="code-box">
+        <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My First Website&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is my first web page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+      </div>
+
+      <h3>3. Add Style (CSS)</h3>
+      <p>
+        Next, use CSS to add design and color to your page. With a few simple
+        lines, you can change the look completely:
+      </p>
+
+      <div class="code-box">
+        <pre><code class="language-css">
+body {
+  background-color: #000;
+  color: #ff1b1b;
+  font-family: "Courier New", monospace;
+  text-align: center;
+}
+        </code></pre>
+      </div>
+
+      <p>
+        You can also use <b>Tailwind CSS</b> for faster and more flexible
+        styling:
+      </p>
+
+      <div class="code-box">
+        <pre><code class="language-html">
+&lt;button class="bg-red-600 text-white rounded-lg p-3 hover:bg-red-700"&gt;
+  Click Me
+&lt;/button&gt;
+        </code></pre>
+      </div>
+
+      <h3>4. Add Interactivity (JavaScript)</h3>
+      <p>
+        JavaScript brings your website to life. It makes your page respond to
+        clicks, movement, or data updates. For example:
+      </p>
+
+      <div class="code-box">
+        <pre><code class="language-js">
+document.querySelector("button").addEventListener("click", () => {
+  alert("Hello from JavaScript!");
+});
+        </code></pre>
+      </div>
+
+      <h3>5. Connect Everything Together</h3>
+      <p>
+        Finally, connect your CSS and JavaScript files to your HTML page using
+        the following lines:
+      </p>
+
+      <div class="code-box">
+        <pre><code class="language-html">
+&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;
+        </code></pre>
+      </div>
+
+      <h3>6. Open and Explore</h3>
+      <p>
+        Save all your files, then open <b>index.html</b> in your browser. You
+        now have a fully working simple website! Try changing the text, color,
+        or button to see how every edit transforms your project.
+      </p>
+
+      <h3>7. Keep Learning</h3>
+      <p>
+        Web development is a never-ending journey of creativity and logic.
+        Experiment with new ideas, break things, fix them again, and discover
+        what each piece of code can do. Every step you take builds not just a
+        website, but your understanding of how the web truly works.
+      </p>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
