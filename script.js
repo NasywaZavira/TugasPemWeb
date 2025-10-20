@@ -14,29 +14,6 @@ setInterval(() => {
   }
 }, 2000); //perdetik
 
-// Get current page filename
-const currentPage = window.location.pathname.split("/").pop();
-
-// Create navbar items based on current page
-const getNavItems = () => {
-  const commonItems = `
-    <li style="margin:10px 0;"><a href="index.html" style="color:#ff1b1b;text-decoration:none;">Home</a></li>
-    <li style="margin:10px 0;"><a href="mengenal.html" style="color:#ff1b1b;text-decoration:none;">Get to know HTML, CSS, Javascript & Tailwind</a></li>
-    <li style="margin:10px 0;"><a href="tata-cara.html" style="color:#ff1b1b;text-decoration:none;">How to Create a Website</a></li>
-    <li style="margin:10px 0;"><a href="kesan-pesan.html" style="color:#ff1b1b;text-decoration:none;">Learning Impressions & Messages</a></li>
-  `;
-
-  const projectContactItems = `
-    <li style="margin:10px 0;"><a href="#projects" style="color:#ff1b1b;text-decoration:none;">Projects</a></li>
-    <li style="margin:10px 0;"><a href="#contact" style="color:#ff1b1b;text-decoration:none;">Contact</a></li>
-  `;
-
-  // Only show projects and contact on index.html
-  return currentPage === "index.html" || currentPage === ""
-    ? commonItems + projectContactItems
-    : commonItems;
-};
-
 // Navbar HTML
 const navbarHTML = `
   <nav style="position:fixed;top:0;left:0;width:100%;background:black;z-index:1000;padding:20px 0;display:flex;justify-content:space-between;align-items:center;">
@@ -56,7 +33,12 @@ const navbarHTML = `
       width:280px;
       text-align:left;
     ">
-    ${getNavItems()}
+    <li style="margin:10px 0;"><a href="index.html" style="color:#ff1b1b;text-decoration:none;">Home</a></li>
+    <li style="margin:10px 0;"><a href="#projects" style="color:#ff1b1b;text-decoration:none;">Projects</a></li>
+    <li style="margin:10px 0;"><a href="#contact" style="color:#ff1b1b;text-decoration:none;">Contact</a></li>
+    <li style="margin:10px 0;"><a href="mengenal.html" style="color:#ff1b1b;text-decoration:none;">Get to know HTML, CSS, Javascript & Tailwind</a></li>
+    <li style="margin:10px 0;"><a href="tata-cara.html" style="color:#ff1b1b;text-decoration:none;">How to Create a Website</a></li>
+    <li style="margin:10px 0;"><a href="kesan-pesan.html" style="color:#ff1b1b;text-decoration:none;">Learning Impressions & Messages</a></li>
     </ul>
   </nav>
 `;
