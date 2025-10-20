@@ -34,8 +34,8 @@ const navbarHTML = `
       text-align:left;
     ">
     <li style="margin:10px 0;"><a href="index.html" style="color:#ff1b1b;text-decoration:none;">Home</a></li>
-    <li style="margin:10px 0;"><a href="#projects" style="color:#ff1b1b;text-decoration:none;">Projects</a></li>
-    <li style="margin:10px 0;"><a href="#contact" style="color:#ff1b1b;text-decoration:none;">Contact</a></li>
+    <li style="margin:10px 0;"><a href="indek.html/#projects" style="color:#ff1b1b;text-decoration:none;">Projects</a></li>
+    <li style="margin:10px 0;"><a href="indek.html/#contact" style="color:#ff1b1b;text-decoration:none;">Contact</a></li>
     <li style="margin:10px 0;"><a href="mengenal.html" style="color:#ff1b1b;text-decoration:none;">Get to know HTML, CSS, Javascript & Tailwind</a></li>
     <li style="margin:10px 0;"><a href="tata-cara.html" style="color:#ff1b1b;text-decoration:none;">How to Create a Website</a></li>
     <li style="margin:10px 0;"><a href="kesan-pesan.html" style="color:#ff1b1b;text-decoration:none;">Learning Impressions & Messages</a></li>
